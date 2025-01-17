@@ -1,0 +1,132 @@
+
+
+body {
+    font-family: 'Georgia', sans-serif; 
+    background-color: #F4F1E1; 
+    color: #333;
+}
+
+p {
+    font-family: 'Georgia', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; 
+    color: #3E5C48; 
+}
+
+.navbar-nav .nav-link {
+    color: #F1E3D3 !important; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A38D68 !important; 
+}
+
+/* Para el Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-family: 'Georgia', sans-serif!important;
+    background-color: #3E5C48!important; 
+    color: #F1E3D3!important;
+    border: 1px solid #3E5C48!important; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #A38D68!important;
+    color: #3E5C48!important;
+    border: 1px solid #A38D68!important; 
+}
+
+.btn:focus, .btn:active {
+    box-shadow: 0 0 5px rgba(163, 141, 104, 0.5);
+}
+
+.card {
+    border: 1px solid #3E5C48;
+    background-color: #FFF;
+}
+
+.card-title {
+    color: #3E5C48;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Estilo para el Sidebar */
+.sidebar-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px; /* Ancho del Sidebar */
+    background-color: #3E5C48;
+    z-index: 100;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para los iconos con texto debajo */
+.sidebar-bg .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los iconos y textos */
+    margin-bottom: 20px;  /* Espacio entre los items */
+}
+
+.sidebar-bg .nav-link {
+    color: white;
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/* Cambios en el ícono */
+.sidebar-bg .nav-link i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Cambiar color de los enlaces al pasar el cursor */
+.sidebar-bg .nav-link:hover {
+    color: #A38D68;
+}
+
+/* Estilo para los títulos de la sección (si los tienes) */
+.sidebar-bg .nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #F1E3D3;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 125px; /* Ancho del Sidebar */
+    height: calc(100vh - 50px - 50px); /* Ajusta la altura para no sobreponer el Footer */
+    overflow-y: auto;
+    margin-bottom: 60px; /* Espacio para el Footer */
+}
