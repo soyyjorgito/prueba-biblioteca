@@ -38,3 +38,7 @@ cd prueba-biblioteca
 ---
 ## Pruebas Unitarias
 - php artisan test
+
+
+## Importante
+- Al registrar usuarios se crean usuarios con el rol de Admin, para registrar usuarios con el rol de Cliente ir a Http/Controllers/AuthController y usar la linea 38.

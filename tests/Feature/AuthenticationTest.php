@@ -16,6 +16,7 @@ class AuthenticationTest extends TestCase
     public function a_user_can_register_successfully()
     {
         Role::create(['name' => 'client']);
+        Role::create(['name' => 'admin']);
         $userData = [
             'name' => 'Juan Pérez',
             'email' => 'juan.perez@example.com',

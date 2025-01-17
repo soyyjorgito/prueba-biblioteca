@@ -32,8 +32,10 @@ class AuthController extends Controller
         $input["password"] = bcrypt($input['password']);
 
         $user = User::create($input);
-        // $user -> assignRole('admin'); Asignar rol de Admin
-        $user -> assignRole('client'); // Asignar rol de Cliente 
+
+        // Asignar roles
+        $user -> assignRole('admin'); // Asignar rol de Admin
+        // $user -> assignRole('client'); // Asignar rol de Cliente 
 
         $response["success"] = true;
 
