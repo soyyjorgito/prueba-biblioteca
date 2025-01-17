@@ -13,8 +13,8 @@
 ## Instalación 
 
 ### 1. Clonar el Repositorio
-git clone https://github.com/soyyjorgito/prueba-biblioteca.git
-cd prueba-biblioteca
+- git clone https://github.com/soyyjorgito/prueba-biblioteca.git
+- cd prueba-biblioteca
 ### 2. Configuración de Laravel
 - composer install
 - cp .env.example .env (Crear archivo de configuración .env)
@@ -30,15 +30,16 @@ cd prueba-biblioteca
 ### Ejecutar migraciones y seeders
 - php artisan migrate --seed
 ### Iniciar servidor de backend
-- php artisan serve
+- php artisan serve (Tener encendido XAMPP con Apache y PHPMyAdmin)
 ### 3. Configuración de React
 - npm install
 - npm run dev
 
 ---
 ## Pruebas Unitarias
+- php artisan migrate --env=testing (Crear base de datos de pruebas)
 - php artisan test
 
 
 ## Importante
-- Al registrar usuarios se crean usuarios con el rol de Admin, para registrar usuarios con el rol de Cliente ir a Http/Controllers/AuthController y usar la linea 38.
+- Al registrar usuarios se crean usuarios con el rol de Admin, para registrar usuarios con el rol de Cliente ir a Http/Controllers/AuthController, descomentar la línea 38 y volver a comentar la línea 37.
