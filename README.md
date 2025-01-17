@@ -37,7 +37,7 @@
 
 ---
 ## Pruebas Unitarias
-- php artisan migrate --env=testing (Crear base de datos de pruebas)
+- php artisan migrate --env=testing (Crear base de datos de pruebas) (Tener encendido XAMPP con Apache y PHPMyAdmin)
 - php artisan test
 
 
