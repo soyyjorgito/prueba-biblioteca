@@ -40,6 +40,14 @@
 - php artisan migrate --env=testing (Crear base de datos de pruebas) (Tener encendido XAMPP con Apache y PHPMyAdmin)
 - php artisan test
 
-
+---
+## Instrucciones
+- Registrar usuario como Administrador
+- Registrar usuario como Cliente
+- Iniciar sesión como Administrador
+- Agregar Categorías de libros en el menú Categorias
+- Agregar libros en el menú libros
+- Agregar un préstamo a un usuario en el menú Préstamos (Al agregar un préstamo se reduce el Stock, al devolver el préstamo se aumenta el stock).
+- En el Dashboard del Cliente se pueden solicitar préstamos de libros, así como poder devolverlos.
 ## Importante
 - Al registrar usuarios se crean usuarios con el rol de Admin, para registrar usuarios con el rol de Cliente ir a Http/Controllers/AuthController, descomentar la línea 38 y volver a comentar la línea 37.
